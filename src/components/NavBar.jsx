@@ -16,7 +16,7 @@ function NavBar() {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const currentTab = linkArr.find(item => item.link === currentPath)?.name || "ISROverse";
+  const currentTab = linkArr.find(item => item.link === currentPath)?.name || "ISRO INSIGHTS";
 
   return (
     <>
@@ -55,7 +55,7 @@ function NavBar() {
           }`}
       >
         <div className="flex items-center justify-between px-4 py-6 border-b border-gray-700">
-          <h2 className="text-white text-lg font-bold">ISROverse</h2>
+          <h2 className="text-white text-lg font-bold">ISRO INSIGHTS</h2>
           <button onClick={() => setIsOpen(false)} className="text-white">
             <X className="w-5 h-5" />
           </button>
