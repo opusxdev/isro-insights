@@ -24,7 +24,7 @@ function Home() {
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center text-center h-screen px-6 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-white drop-shadow-lg">
-            Welcome to ISROverse
+            Welcome to ISRO INSIGHTS 
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-300">
             Dive into a galactic data journey showcasing India's achievements in space exploration.
