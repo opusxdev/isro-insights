@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useGetLaunchesQuery } from '../Redux/Services/isroStatsApi';
-import { useGetSpacecraftsQuery } from '../Redux/Services/isroStatsApi';
-import { DataPieChart } from '../Components/Charts/DataPieChart';
-import { DataBarChart } from '../Components/Charts/DataBarChart';
-import { DataYearChart } from '../Components/Charts/DataYearChart';
+import { useGetLaunchesQuery } from '../redux/services/isroStatsApi';
+import { useGetSpacecraftsQuery } from '../redux/services/isroStatsApi';
+import { DataPieChart } from '../components/Charts/DataPieChart';
+import { DataBarChart } from '../components/Charts/DataBarChart';
+import { DataYearChart } from '../components/Charts/DataYearChart';
 import Lottie from 'lottie-react';
 import Loader from '../assets/loader.json';
 
@@ -172,7 +172,7 @@ function Dashboard() {
   }
   return (
     <div className="min-h-screen bg-black p-6 text-white">
-      <h2 className="text-2xl font-bold mb-6 text-center mt-20 md:mt-24">ISRO Dashboard</h2>
+      <h2 className="text-2xl text-green-400  mb-6 text-center mt-20 md:mt-24">ISRO Dashboard</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         <DataPieChart title="Launches" data={launchVehicleCount} />
         <DataPieChart title="Spacecrafts" data={spaceCraftCount} />

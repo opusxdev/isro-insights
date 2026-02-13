@@ -1,6 +1,6 @@
 import React from 'react';
-import SplineScene from '../Components/SplineScene';
-import NavBlock from '../Components/NavBlock';
+import SplineScene from '../components/SplineScene';
+import NavBlock from '../components/NavBlock';
 
 function Home() {
   const navBlockArr = [
@@ -14,28 +14,27 @@ function Home() {
 
   return (
     <div className="relative min-h-screen bg-black text-white font-sans overflow-x-hidden">
-      {/* Background layer */}
       <div className="fixed inset-0 z-0">
         <SplineScene />
       </div>
-
-      {/* Foreground layer */}
       <div className="relative z-10">
-        {/* Hero Section */}
         <section className="flex flex-col items-center justify-center text-center h-screen px-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-white drop-shadow-lg">
-            Welcome to ISRO INSIGHTS 
+          <h1 className="text-4xl md:text-4xl font-medium tracking-wide  drop-shadow-lg">
+            Welcome to 
+            <span className='text-green-400 '> ISRO INSIGHTS </span> 
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-300">
             Dive into a galactic data journey showcasing India's achievements in space exploration.
             Explore spacecrafts, missions, commercial ventures, and more—powered by the ISRO APIs.
           </p>
-          <div className="mt-12 animate-bounce text-sm text-gray-500">
+          <div className="mt-12 animate-bounce text-sm text-green-400">
             Scroll to explore ↓
           </div>
         </section>
 
-        {/* Navigation Blocks */}
+
+
+
         <section className="px-6 pb-64 max-w-7xl mx-auto z-10">
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {navBlockArr.map((block) => (
@@ -53,4 +52,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home

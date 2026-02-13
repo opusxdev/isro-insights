@@ -1,6 +1,8 @@
-import CatalogCard from '../Components/CatalogCard';
-import commercialCraftImg from '../Images/Commercial_Craft.jpg';
-import spaceCraftImg from '../Images/Spacecrafts_placeholder.jpeg';
+import CatalogCard from '../components/CatalogCard';
+
+import commercialCraftImg from '../images/Commercial_Craft.png';
+
+import spaceCraftImg from '../images/Spacecrafts_placeholder.jpeg';
 
 function Catalog() {
   const catalogData = [
@@ -21,7 +23,7 @@ function Catalog() {
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-start p-6">
       <div className="w-full max-w-screen-lg">
-        <h1 className="text-xl font-bold md:text-center text-white mb-6 mt-20">
+        <h1 className="text-xl  md:text-center text-green-400 mb-6 mt-20">
           Catalog
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -40,4 +42,4 @@ function Catalog() {
   );
 }
 
-export default Catalog;
+export default Catalog

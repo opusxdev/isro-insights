@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useGetLaunchesQuery } from '../Redux/Services/isroStatsApi';
-import DisplayCard from '../Components/DisplayCard';
-import FilterTab from '../Components/FilterTab';
+import { useGetLaunchesQuery } from '../redux/services/isroStatsApi';
+import DisplayCard from '../components/DisplayCard';
+import FilterTab from '../components/FilterTab';
 import Lottie from 'lottie-react';
 import Loader from '../assets/loader.json';
 
@@ -105,11 +105,11 @@ function Explore() {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mt-20 md:mt-24 mb-4 md:text-center">Explore Launches</h1>
+      <h1 className="text-xl  mt-20 md:mt-24 mb-4 md:text-center">Explore Launches</h1>
 
       <button
         onClick={() => setShowFilters(!showFilters)}
-        className="bg-indigo-600 text-white px-4 py-2 rounded mb-4"
+        className="bg-green-700 text-white px-4 py-2 rounded mb-4"
       >
         {showFilters ? 'Hide Filters' : 'Show Filters'}
       </button>
