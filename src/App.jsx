@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Catalog from "./Pages/Catalog"
-import Centers from './Pages/Centers';
-import Commercial from './Pages/Commercial';
-import Dashboard from './Pages/Dashboard';
-import Explore from './Pages/Explore';
-import Home from './Pages/Home';
-import SpaceCrafts from './Pages/SpaceCrafts';
-import About from './Pages/About';
+import Catalog from "./pages/Catalog"
+import Centers from './pages/Centers';
+import Commercial from './pages/Commercial';
+import Dashboard from './pages/Dashboard';
+import Explore from './pages/Explore';
+import Home from './pages/Home';
+import SpaceCrafts from './pages/SpaceCrafts';
+import About from './pages/About';
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 
