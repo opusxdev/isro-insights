@@ -16,17 +16,17 @@ function FilterTab({
 
         {/* Order Section */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-          <span className="font-semibold text-gray-200 w-32">Order</span>
+          <span className=" text-white-200 w-32">Order</span>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => handleSort('Ascending')}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition"
+              className="bg-black-500 hover:bg-green-700 text-white px-4 py-2 rounded-md transition"
             >
               Ascending
             </button>
             <button
               onClick={() => handleSort('Descending')}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition"
+              className="bg-black-500 hover:bg-green-700 text-white px-4 py-2 rounded-md transition"
             >
               Descending
             </button>
@@ -36,7 +36,7 @@ function FilterTab({
         {/* Vehicle Type Section */}
         {vehicleTypes?.length > 0 && (
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-            <span className="font-semibold text-gray-200 w-32">Vehicle Type</span>
+            <span className=" text-gray-200 w-32">Vehicle Type</span>
             <div className="flex flex-wrap gap-2">
               {vehicleTypes.map(type => (
                 <button
@@ -44,8 +44,8 @@ function FilterTab({
                   onClick={() => toggleVehicle(type)}
                   className={`px-4 py-2 rounded-md transition text-white ${
                     selectedVehicles.includes(type)
-                      ? 'bg-emerald-700 hover:bg-emerald-800'
-                      : 'bg-emerald-500 hover:bg-emerald-600'
+                      ? 'bg-black-700 hover:bg-green-700'
+                      : 'bg-black-500 hover:bg-green-700'
                   }`}
                 >
                   {type}
@@ -58,7 +58,7 @@ function FilterTab({
         {/* Mission Status Section */}
         {statusSet?.length > 0 && (
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-            <span className="font-semibold text-gray-200 w-32">Mission Status</span>
+            <span className="text-gray-200 w-32">Mission Status</span>
             <div className="flex flex-wrap gap-2">
               {statusSet.map(status => (
                 <button
@@ -66,8 +66,8 @@ function FilterTab({
                   onClick={() => selectMissionStatus(status)}
                   className={`px-4 py-2 rounded-md transition text-white ${
                     missionStatus === status
-                      ? 'bg-purple-700 hover:bg-purple-800'
-                      : 'bg-purple-500 hover:bg-purple-600'
+                      ? 'bg-black-700 hover:bg-green-700'
+                      : 'bg-black-500 hover:bg-green-700'
                   }`}
                 >
                   {status === 'SUCCESSFUL' ? 'MISSION SUCCESSFUL' : 'UNSUCCESSFUL'}
@@ -79,10 +79,10 @@ function FilterTab({
 
         {/* Reset Section */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-          <span className="font-semibold text-gray-200 w-32">Reset</span>
+          <span className="text-gray-200 w-32">Reset</span>
           <button
             onClick={handleReset}
-            className="bg-rose-500 hover:bg-rose-600 text-white px-4 py-2 rounded-md transition"
+            className="bg-black-500 hover:bg-green-700 text-white px-4 py-2 rounded-md transition"
           >
             Reset All Filters
           </button>
