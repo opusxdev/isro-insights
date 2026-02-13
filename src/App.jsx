@@ -7,8 +7,8 @@ import Explore from './Pages/Explore';
 import Home from './Pages/Home';
 import SpaceCrafts from './Pages/SpaceCrafts';
 import About from './Pages/About';
-import NavBar from './Components/NavBar';
-import Footer from './Components/Footer';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
