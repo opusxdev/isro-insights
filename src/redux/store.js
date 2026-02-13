@@ -1,6 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { isroVercelApi } from "./Services/isroVercelApi";
-import { isroStatsApi } from "./Services/isroStatsApi";
+import { isroVercelApi } from "../redux/services/isroVercelApi"
+
+import { isroStatsApi } from "../redux/services/isroStatsApi"
+
 
 export const store = configureStore({
   reducer: {
