@@ -1,14 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
-import Catalog from './Pages/Catalog';
-import Centers from './Pages/Centers';
-import Commercial from './Pages/Commercial';
-import Dashboard from './Pages/Dashboard';
-import Explore from './Pages/Explore';
-import Home from './Pages/Home';
-import SpaceCrafts from './Pages/SpaceCrafts';
-import About from './Pages/About';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+
+import Catalog from "../src/Pages/Catalog"
+import Centers from '../src/Pages/Centers';
+import Commercial from '../src/Pages/Commercial';
+import Dashboard from '../src/Pages/Dashboard';
+import Explore from '../src/Pages/Explore';
+import Home from '../src/Pages/Home';
+import SpaceCrafts from '../src/Pages/SpaceCrafts';
+import About from '../src/Pages/About';
+
+import NavBar from  "../src/components/NavBar"
+
+import Footer from '../src/components/Footer';
 
 function App() {
   return (
