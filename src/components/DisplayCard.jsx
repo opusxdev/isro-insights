@@ -21,28 +21,28 @@ function DisplayCard({
           : "bg-gradient-to-r from-[#0a0a1a] via-transparent to-gray-900/80"
         }`}
     >
-      {Name && <h2 className="text-xl font-semibold text-white">{Name}</h2>}
+      {Name && <h2 className="text-l text-white">{Name}</h2>}
 
       {LaunchDate && (
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-gray-300 font-light">
           <strong>Launch Date:</strong> {new Date(LaunchDate).toLocaleDateString()}
         </p>
       )}
 
       {LaunchType && (
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-gray-300 font-light">
           <strong>Launch Type:</strong> {LaunchType}
         </p>
       )}
 
       {Payload && (
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-gray-300 font-light">
           <strong>Payload:</strong> {Payload}
         </p>
       )}
 
       {MissionStatus && (
-        <p className={`text-sm ${isUnsuccessful ? "text-red-400" : "text-green-400"}`}>
+        <p className={`text-sm ${isUnsuccessful ? "text-red-400" : "text-green-400  font-light"}`}>
           <strong>Mission Status:</strong> {MissionStatus}
         </p>
       )}
@@ -70,7 +70,7 @@ function DisplayCard({
           to={Link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-2 text-blue-400 hover:text-blue-300 transition"
+          className="inline-block mt-2 text-blue-400 hover:text-blue-300 transition text-sm"
         >
           More Details →
         </NavLink>
