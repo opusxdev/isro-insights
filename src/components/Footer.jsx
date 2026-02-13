@@ -12,38 +12,39 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0b0b1f] text-white border-t border-indigo-700/50 backdrop-blur-md px-6 py-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8">
+    <footer className="bg-[#fffff] text-white border-t border-green-400/50 backdrop-blur-md px-6 py-2">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-9">
         
         {/* Project Summary */}
         <div className="md:w-1/2 space-y-4">
-          <h2 className="text-2xl font-semibold text-indigo-400">ISRO INSIGHTS</h2>
-          <p className="text-sm text-gray-400 leading-relaxed">
+          <h2 className="text-l  text-green-400">ISRO INSIGHTS</h2>
+          <p className="text-xs text-gray-400 leading-relaxed">
             ISRO INSIGHTS is a portal showcasing India's space achievements using open APIs.
             All data is fetched live from public sources and presented with an intuitive, modern UI.
           </p>
         </div>
 
         {/* Resource Links */}
-        <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
           {resourceArr.map((item, index) => (
             <a
               key={index}
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-gray-300 hover:text-indigo-400 transition underline underline-offset-4"
+              className="text-xs text-gray-300 hover:text-indigo-400 transition underline underline-offset-4"
             >
               {item.name}
             </a>
           ))}
         </div>
       </div>
+      
 
-      {/* copyright */}
-      <div className="mt-10 text-center text-xs text-gray-500 border-t border-gray-800 pt-4">
+      {/* copyright */}<div className="mt-2 text-center text-xs text-white-500 mt-1 border-gray-800 pt-4">
         © {new Date().getFullYear()} ISRO INSIGHTS. 
       </div>
+     
     </footer>
   );
 }
